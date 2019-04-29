@@ -121,6 +121,12 @@
       var renderHits = function() {
         hitElement.innerHTML = hits;
       }
+      
+      function setHits(number) {
+        hits = number;
+        hitElement.innerHTML = hits;
+        return "You have set the hit counter to " + number;
+      }
 
       var resetHits = function() {
         hits = 0;
