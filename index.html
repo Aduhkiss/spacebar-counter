@@ -98,7 +98,13 @@
     </style>
   </head>
   <body>
-    <script>
+    <div id="activity">
+      <img src="https://code.quirkbot.com/assets/images/logo/white-outline.svg" width="30%" alt="">
+      <h1 id="counter">You have hit the spacebar <span id="hits">0</span> times.</h1>
+      <a href="#" onclick="resetHits()" class="tryagain">RESTART</a>
+      </div>
+    
+        <script>
       var hits = 0;
       var hitElement = document.getElementById('hits');
       document.body.onkeyup = function(e) {
@@ -122,10 +128,5 @@
       }
 
     </script>
-    <div id="activity">
-      <img src="https://code.quirkbot.com/assets/images/logo/white-outline.svg" width="30%" alt="">
-      <h1 id="counter">You have hit the spacebar <span id="hits">0</span> times.</h1>
-      <a href="#" onclick="resetHits()" class="tryagain">RESTART</a>
-      </div>
   </body>
 </html>
