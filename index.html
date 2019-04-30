@@ -99,7 +99,6 @@
   </head>
   <body>
     <div id="activity">
-      <img src="https://code.quirkbot.com/assets/images/logo/white-outline.svg" width="30%" alt="">
       <h1 id="counter">You have hit the spacebar <span id="hits">0</span> times.</h1>
       <a href="#" onclick="resetHits()" class="tryagain">RESTART</a>
       </div>
@@ -120,7 +119,6 @@
 
       var renderHits = function() {
         hitElement.innerHTML = hits;
-        hits = (hits * hits)
       }
       
       function setHits(number) {
